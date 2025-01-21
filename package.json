@@ -1,0 +1,11 @@
+{
+  "name": "transportation_management_system",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"cd backend && flask run\" \"cd frontend && npm start\"",
+    "install": "cd frontend && npm install && cd ../backend && pip install -r requirements.txt"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
